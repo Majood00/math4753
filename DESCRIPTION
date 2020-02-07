@@ -4,7 +4,7 @@ Title: A selection of lab functions
 Version: 0.1.0
 Author: Majood Haddad
 Maintainer: Majood Haddad <majood00@ou.edu>
-Description: Math 4753 lab functions as produced by Dr. Wayne Stewart.
+Description: Math 4753 lab functions as produced by Majood Haddad.
 License: MIT
 Encoding: UTF-8
 LazyData: true
