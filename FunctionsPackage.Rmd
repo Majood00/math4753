@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(math4753)
-x=1:30
-mysd(x)
+x=1:10
+mysnd(x)
 ```
 
