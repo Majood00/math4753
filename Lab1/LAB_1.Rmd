@@ -1,0 +1,170 @@
+---
+title: "Lab 1"
+author: "Majood Haddad"
+date: "1/14/2020"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    theme: sandstone
+    highlight: zenburn
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lab 1
+
+## Task 1
+
+```{r}
+getwd()
+```
+
+## Task 2
+
+```{r}
+ddt <- read.csv("DDT.csv")
+head(ddt)
+```
+
+## Task 3
+
+1. The qualitative variables are RIVER and SPECIES.
+
+2. The quantitative varriables are MILE, LENGTH, WEIGHT and DDT.
+
+3. There are 3 SPECIES.
+
+4. 
+```{r}
+subset(ddt, SPECIES == "LMBASS" & WEIGHT >800)
+```
+5.
+```{r}
+subset(ddt, RIVER=="SCM" & DDT >4.0)
+```
+### Clicker Questions
+  >
+  Q1. 42.8125
+```{r}
+mean(ddt$LENGTH)
+```
+  >
+  Q2. 376.5461
+```{r}
+sd(ddt$WEIGHT)
+```
+
+  >
+  Q3. 0 = No
+```{r}
+plot(WEIGHT~LENGTH,data=ddt)
+```
+ 
+  > 
+  Q4. 1.00
+```{r}
+v=1:20
+v/20
+```
+  
+  
+## Task 4
+
+Table 1:
+```{r}
+table(ddt$RIVER)
+```
+
+Graph 1:
+```{r}
+barplot(table(ddt$RIVER), col="turquoise")
+```
+
+
+Table 2:
+```{r}
+table(ddt$SPECIES,ddt$RIVER)
+```
+
+
+Graph 2:
+```{r}
+barplot(table(ddt$SPECIES,ddt$RIVER))
+```
+
+## Task 5
+
+### Part 1
+```{r}
+sp=with(ddt,table(SPECIES))
+sp
+pie(sp,col=1:3)
+```
+
+### Part 2
+
+```{r}
+riv=with(ddt,table(RIVER))
+riv
+pie(riv,col=1:4)
+```
+
+
+## Task 6
+
+
+### Part 1
+```{r}
+with(ddt,boxplot(DDT,ylab="DDT",col="Blue",notch=TRUE))
+```
+
+### Part 2
+```{r}
+with(ddt,boxplot(WEIGHT,ylab="WEIGHT",col="Green",notch=TRUE))
+```
+
+### Part 3
+```{r}
+with(ddt,boxplot(MILE,ylab="LENGTH",col="Red",notch=TRUE))
+```
+
+## Task 7
+### Part 1
+```{r}
+coplot(LENGTH~WEIGHT|RIVER,data=ddt)
+```
+
+### Part2
+```{r}
+coplot(DDT~WEIGHT|SPECIES,data=ddt)
+```
+
+## Task 8
+### Part 1
+```{r}
+library(ggplot2)
+g <- ggplot(ddt, aes(x = SPECIES, y = WEIGHT, fill=RIVER )) + geom_boxplot() + ggtitle("Majood Haddad")
+print(g)
+```
+
+### Part 2
+```{r}
+library(ggplot2)
+gr <- ggplot(ddt, aes(x = RIVER, y = LENGTH, fill=SPECIES )) + geom_violin() + ggtitle("Majood Haddad")
+print(gr)
+```
+
+### Part 3
+```{r}
+library(ggplot2)
+grh <- ggplot(ddt, aes(x = WEIGHT, y = LENGTH, fill=SPECIES, col=SPECIES )) + geom_point() + ggtitle("Majood Haddad")
+print(grh)
+```
+
