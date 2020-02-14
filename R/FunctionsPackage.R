@@ -6,7 +6,7 @@
 #'
 #' @param x a vector in which its value is used to calculate the standard normal distribution
 #'
-#' @return a standard normal distribution vector on the form of a vector object
+#' @return a standard normal distribution vector in the form of a vector object
 #' @export
 #'
 #' @examples
