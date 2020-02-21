@@ -3,7 +3,7 @@
 #' Creates a curve of a normal distribution function and plots and shaded the area
 #'
 #' This is the tjird function in this package for the MATH4753 class. It takes the values of the vectors and plugs them into the equation. It creates a curve of a normal distribution, and shades the area created by the specific vectors and adds the value of the area to the curve.
-#' @param a a vector in which is value represents the upper limit for the x-axis
+#' @param x a vector in which is value represents the upper limit for the x-axis
 #' @param mu a vector representing the mean
 #' @param sigma a vector representing the standard deviation
 #'
