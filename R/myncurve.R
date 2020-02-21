@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' x=5, mu=3, sigma=6;mycurve(x,mu,sigma)
-myncurve = function(mu, sigma, a){
+myncurve = function(mu, sigma, x){
   curve(dnorm(mean=mu,sd=sigma, x=a), xlim = c(mu-3*sigma, mu + 3*sigma)) #draws a normal curve
   xcurve=seq(-∞,x,length=1000)  #finds the area between x=-∞ and x
   ycurve=dnorm(xcurve,mean,sd) #y values correspond to the x values
