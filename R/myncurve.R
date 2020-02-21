@@ -12,8 +12,8 @@
 #'
 #' @examples
 #' x=5, mu=3, sigma=6;mycurve(x,mu,sigma)
-myncurve = function(mu, sigma, x){
-  curve(dnorm(mean=mu,sd=sigma, x=a), xlim = c( mu - 3*sigma, mu + 3*sigma))
+myncurve = function(mu, sigma, a){
+  curve(dnorm(mean=mu,sd=sigma, x), xlim = c( mu - 3*sigma, mu + 3*sigma))
   xcurve=seq(-1000,x,length=1000)
   ycurve=dnorm(xcurve,mean=mu,sd=sigma)
   polygon(c(-1000,xcurve,x),c(0,ycurve,0),col="Orange")
