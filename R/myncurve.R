@@ -11,9 +11,9 @@
 #' @export
 #'
 #' @examples
-#' x=5, mu=3, sigma=6;mycurve(x,mu,sigma)
+#' a=5, mu=3, sigma=6;mycurve(x,mu,sigma)
 myncurve = function(mu, sigma, a){
-  curve(dnorm(a,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma)) #draws a normal curve
+  curve(dnorm(mean=mu,sd=sigma, x=a), xlim = c(mu-3*sigma, mu + 3*sigma)) #draws a normal curve
   xcurve=seq(-∞,a,length=1000)  #finds the area between x=-∞ and x
   ycurve=dnorm(xcurve,mean,sd) #y values correspond to the x values
   polygon(c(-∞,xcurve,a),c(0,ycurve,0),col="Orange") #fills in the polygon with the given vertices
