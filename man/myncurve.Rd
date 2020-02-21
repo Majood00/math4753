@@ -4,14 +4,14 @@
 \alias{myncurve}
 \title{My Normal Distribution Function}
 \usage{
-myncurve(x, mu, sigma)
+myncurve(mu, sigma, x)
 }
 \arguments{
-\item{x}{a vector in which is value represents the upper limit for the x-axis}
-
 \item{mu}{a vector representing the mean}
 
 \item{sigma}{a vector representing the standard deviation}
+
+\item{x}{a vector in which is value represents the upper limit for the x-axis}
 }
 \value{
 a curve with the area shaded and plotting the value of the area
