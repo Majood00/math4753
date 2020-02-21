@@ -4,7 +4,7 @@
 \alias{myncurve}
 \title{My Normal Distribution Function}
 \usage{
-myncurve(mu, sigma, x)
+myncurve(mu, sigma, a)
 }
 \arguments{
 \item{mu}{a vector representing the mean}
