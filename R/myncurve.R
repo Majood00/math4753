@@ -13,11 +13,11 @@
 #' @examples
 #' x=5, mu=3, sigma=6;mycurve(x,mu,sigma)
 myncurve = function(mu, sigma, a){
-  curve(dnorm(mean=mu,sd=sigma, x), xlim = c( mu - 3*sigma, mu + 3*sigma))
-  xcurve=seq(-1000,x,length=1000)
+  curve(dnorm(x, mean=mu,sd=sigma), xlim = c( mu - 3*sigma, mu + 3*sigma))
+  xcurve=seq(-1000,a,length=1000)
   ycurve=dnorm(xcurve,mean=mu,sd=sigma)
-  polygon(c(-1000,xcurve,x),c(0,ycurve,0),col="Orange")
-  prob=pnorm(x,mean=mu,sd=sigma)-pnorm(-1000,mean=mu,sd=sigma)
+  polygon(c(-1000,xcurve,a),c(0,ycurve,0),col="Orange")
+  prob=pnorm(a,mean=mu,sd=sigma)-pnorm(-1000,mean=mu,sd=sigma)
   prob=round(prob,4)
   text((3.5,1.5,prob)
 }
