@@ -7,7 +7,7 @@
 mynbino(y, r, p)
 }
 \arguments{
-\item{y}{a vector of non-negative integer quantiles}
+\item{y}{a vector ofnumber of trials until the kth success}
 
 \item{r}{a vector which shows the size of the sample}
 
@@ -23,5 +23,5 @@ Finds negative binomial distribution based on the parameters size, probabilities
 This is the second function in this package for the MATH4753 class. It takes the values of the vectors and plugs them into the equation. The answer shows the negative binomial distribution, which is a discrete probability distribution in relation to the number of successes in a sequence of Bernoulli trials that are independent and identically distributed, and that is before a specified number of failures occurs.
 }
 \examples{
-y=12, r=5, p= 0.3;mynbino(y,r,p)
+y=12, r=5, p=0.3;mynbino(y,r,p)
 }
