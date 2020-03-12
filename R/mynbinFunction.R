@@ -4,7 +4,7 @@
 #'
 #' This is the second function in this package for the MATH4753 class. It takes the values of the vectors and plugs them into the equation. The answer shows the negative binomial distribution, which is a discrete probability distribution in relation to the number of successes in a sequence of Bernoulli trials that are independent and identically distributed, and that is before a specified number of failures occurs.
 #'
-#' @param y a vector ofnumber of trials until the kth success
+#' @param y a vector of number of trials until the kth success
 #' @param r a vector which shows the size of the sample
 #' @param p a vector in which its value shows the probability
 #'
