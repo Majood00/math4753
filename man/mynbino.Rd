@@ -7,7 +7,7 @@
 mynbino(y, r, p)
 }
 \arguments{
-\item{y}{a vector ofnumber of trials until the kth success}
+\item{y}{a vector of number of trials until the kth success}
 
 \item{r}{a vector which shows the size of the sample}
 
