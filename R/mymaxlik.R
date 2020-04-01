@@ -6,7 +6,7 @@
 #'
 #' @param lfun
 #' @param x
-#' @param param
+#' @param param parameter of interest
 #' @param ...
 #'
 #' @return
