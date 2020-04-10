@@ -15,7 +15,7 @@
 #' @export
 #'
 #' @examples
-#' myboot2()
+#' iter=10000,x=rnorm(30,mean=10,sd=12),fun="mean",alpha=0.05; myboot2(iter=10000,x,fun="mean",alpha=0.05)
 myboot2=function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){
   n=length(x)   #sample size
   y=sample(x,n*iter,replace=TRUE)
