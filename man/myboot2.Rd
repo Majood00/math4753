@@ -11,9 +11,9 @@ myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 
 \item{x}{vector of the sample we choose to resample from}
 
-\item{fun}{function which takes the value of a statistical function, such as mean, median, IQR, etc.}
+\item{fun}{function which takes the value of a statistical function, such as mean, median, IQR, etc}
 
-\item{alpha}{determinant of the confidence interval in percentage. Example: .05 = 95% confidence}
+\item{alpha}{determinant of the confidence interval in percentage}
 
 \item{cx}{size of the text}
 }

@@ -4,7 +4,9 @@
 \name{fire}
 \alias{fire}
 \title{Fire Damage}
-\format{}
+\format{
+
+}
 \source{
 \url{https:]]www.crcpress.com/Statistics-for-Engineering-and-the-Sciences/Mendenhall-Sincich/p/book/9781498728850}
 }

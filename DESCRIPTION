@@ -8,6 +8,6 @@ Description: Math 4753 lab functions as produced by Majood Haddad.
 License: MIT
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 URL: https://github.com/Majood00/math4753
 BugReports: https://github.com/Majood00/math4753/issues
