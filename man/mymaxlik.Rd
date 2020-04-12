@@ -25,8 +25,8 @@ Finds the maximum likelihood for repeated sampling fron=m the same distribution
 This is the 3rd Function in this packages. This function produces a matrix where each x, param is replaced with the function evaluated at those values. Moreover, it makes a vector that is made up of the column sums. Each vector is the log of the maximum likelihood for a new parameter value. This gives the index for the value of y == max. There is a possibility or a probability that there would be a max between two values of the parameter, therefore 2 indices. The first max will take the larger index. Then the function plots a nice point where the maximum likelihood is. Then the function checks slopes, and if it is a max the slope shoud change sign from + to -. And finally, we should get three + and two -'s.
 }
 \examples{
-#logpoiss=function(x,param) log(dpois(x,lambda=param))
-#logbin=function(x,param) log(dbinom(x,prob=param,size=10))
-#mymaxlik(x=c(9,9,1,9,9,9),param=seq(0,1,length=1000),lfun=logbin,xlab=expression(pi),main="Binomial",cex.main=2)
-#mymaxlik(x=c(3,4,3,5),param=seq(0,20,length=1000),lfun=logpoiss,xlab=expression(lambda),main="Poisson",cex.main=2)
+logpoiss=function(x,param) log(dpois(x,lambda=param))
+logbin=function(x,param) log(dbinom(x,prob=param,size=10))
+mymaxlik(x=c(9,9,1,9,9,9),param=seq(0,1,length=1000),lfun=logbin,xlab=expression(pi),main="Binomial",cex.main=2)
+mymaxlik(x=c(3,4,3,5),param=seq(0,20,length=1000),lfun=logpoiss,xlab=expression(lambda),main="Poisson",cex.main=2)
 }

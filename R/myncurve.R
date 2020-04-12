@@ -14,7 +14,7 @@
 #' x=5
 #' mu=3
 #' sigma=6
-#' mycurve(x,mu,sigma)
+#' myncurve(x,mu,sigma)
 myncurve = function(mu, sigma, a){
   curve(dnorm(x, mean=mu,sd=sigma), xlim = c( mu - 3*sigma, mu + 3*sigma))
   xcurve=seq(-1000,a,length=1000)

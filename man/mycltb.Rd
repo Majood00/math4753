@@ -29,5 +29,8 @@ The height of the y-axis is determined by multiplying ymax, which is the maximum
 A theoretical normal curve is obtained along with the density plot.
 }
 \examples{
-n=5, iter=10000, p=0.5;mycltb(n,iter,p)
+n=5
+iter=10000
+p=0.5
+mycltb(n,iter,p)
 }

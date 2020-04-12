@@ -19,5 +19,6 @@ Finds standard normal distribution from vectors
 This is the first function in this package for the MATH4753 class. It takes the values of the vectors and plugs them into the equation. The answer shows the standard normal distribution, or in other words, how much are the data far away from the mean value.
 }
 \examples{
-x=1:30;mysnd(x)
+x=1:30
+mysnd(x)
 }
