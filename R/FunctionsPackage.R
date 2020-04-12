@@ -10,7 +10,8 @@
 #' @export
 #'
 #' @examples
-#' x=1:30;mysnd(x)
+#' x=1:30
+#' mysnd(x)
 mysnd = function(x){
   (x - mean(x)) / sd(x)
 }

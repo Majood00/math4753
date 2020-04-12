@@ -7,15 +7,15 @@
 myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 }
 \arguments{
-\item{iter}{The number of samples that are used to generate statistics.}
+\item{iter}{number of samples that are used to generate statistics}
 
-\item{x}{The vector of the sample we choose to resample from. Example: set.seed(39); sam=rnorm(25,mean=25,sd=10) was the line we used above myboot2.}
+\item{x}{vector of the sample we choose to resample from}
 
-\item{fun}{Function which takes the value of a statistical function, such as mean, median, IQR, etc.}
+\item{fun}{function which takes the value of a statistical function, such as mean, median, IQR, etc.}
 
-\item{alpha}{The determinant of the confidence interval in percentage. Example: .05 = 95% confidence.}
+\item{alpha}{determinant of the confidence interval in percentage. Example: .05 = 95% confidence}
 
-\item{cx}{Size of the text.}
+\item{cx}{size of the text}
 }
 \value{
 The function takes a sample of size "n" from sample "n" with replacement, creates a confidence interval from alpha/2 and (1-alpha)/2.
@@ -27,5 +27,10 @@ are printed onto the histogram as well as the statistic.
 The function uses another function to create confidence intervals in which the data is likely to fall, adjustable to a given percentage.
 }
 \examples{
-set.seed(60);iter=10000;sam=round(rnorm(30,mean=20,sd=3),3);fun="mean";alpha=0.05;myboot2(iter=10000,x=sam,fun="mean",alpha=0.05,xlab="mean(x)",col=rainbow(35))
+set.seed(60)
+iter=10000
+sam=round(rnorm(30,mean=20,sd=3),3)
+fun="mean"
+alpha=0.05
+myboot2(iter=10000,x=sam,fun="mean",alpha=0.05,xlab="mean(x)",col=rainbow(35))
 }

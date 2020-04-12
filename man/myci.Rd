@@ -7,7 +7,7 @@
 myci(x)
 }
 \arguments{
-\item{x}{vectore that stands for the sample}
+\item{x}{the vector of the sample we choose to find the confidence interval for}
 }
 \value{
 vector with an interval for the 95% confidence level
@@ -19,5 +19,7 @@ Finds the 95% confidence interval for a sample with mean mu
 This is the 4th function in this package. This function produces a vector of an interval. This interval shows the confidence interval for the 95% confidence level of the mean of a sample which is being processed or which goes through this function.
 }
 \examples{
-set.seed(23);x = rnorm(30,mean=10,sd=12);myci(x)
+set.seed(23)
+x = rnorm(30,mean=10,sd=12)
+myci(x)
 }

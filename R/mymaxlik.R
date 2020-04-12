@@ -13,10 +13,10 @@
 #' @export
 #'
 #' @examples
-#' #logpoiss=function(x,param) log(dpois(x,lambda=param))
-#' #logbin=function(x,param) log(dbinom(x,prob=param,size=10))
-#' #mymaxlik(x=c(9,9,1,9,9,9),param=seq(0,1,length=1000),lfun=logbin,xlab=expression(pi),main="Binomial",cex.main=2)
-#' #mymaxlik(x=c(3,4,3,5),param=seq(0,20,length=1000),lfun=logpoiss,xlab=expression(lambda),main="Poisson",cex.main=2)
+#' logpoiss=function(x,param) log(dpois(x,lambda=param))
+#' logbin=function(x,param) log(dbinom(x,prob=param,size=10))
+#' mymaxlik(x=c(9,9,1,9,9,9),param=seq(0,1,length=1000),lfun=logbin,xlab=expression(pi),main="Binomial",cex.main=2)
+#' mymaxlik(x=c(3,4,3,5),param=seq(0,20,length=1000),lfun=logpoiss,xlab=expression(lambda),main="Poisson",cex.main=2)
 mymaxlik=function(lfun,x,param,...){
   np=length(param)
   z=outer(x,param,lfun)

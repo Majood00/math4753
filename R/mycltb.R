@@ -17,7 +17,10 @@
 #' @export
 #'
 #' @examples
-#' n=5, iter=10000, p=0.5;mycltb(n,iter,p)
+#' n=5
+#' iter=10000
+#' p=0.5
+#' mycltb(n,iter,p)
 mycltb=function(n,iter,p=0.5,...){
   y=rbinom(n*iter,size=n,prob=p)
   data=matrix(y,nr=n,nc=iter,byrow=TRUE)
