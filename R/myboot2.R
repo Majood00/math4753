@@ -21,7 +21,7 @@
 #' alpha=0.05
 #' myboot2(iter=10000,x=sam,fun="mean",alpha=0.05,xlab="mean(x)",col=rainbow(35))
 myboot2=function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){
-  n=length(x)   #sample size
+  n=length(x)
   y=sample(x,n*iter,replace=TRUE)
   rs.mat=matrix(y,nr=n,nc=iter,byrow=TRUE)
   xstat=apply(rs.mat,2,fun)

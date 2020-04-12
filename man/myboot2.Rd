@@ -18,13 +18,13 @@ myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 \item{cx}{size of the text}
 }
 \value{
-The function takes a sample of size "n" from sample "n" with replacement, creates a confidence interval from alpha/2 and (1-alpha)/2.
-The function then creates a histogram with a verticl line segment where the statistic in question lies (i.e. mean).
-A line segment underlining the confidence interval appears on the histogram as well. The upper and lower bounds
-are printed onto the histogram as well as the statistic.
+a graph with a confidence interval and a line showing the value of fun
 }
 \description{
 The function uses another function to create confidence intervals in which the data is likely to fall, adjustable to a given percentage.
+}
+\details{
+The function takes a sample of size "n" from sample "n" with replacement, creates a confidence interval from alpha/2 and (1-alpha)/2. The function then creates a histogram with a verticl line segment where the statistic in question lies (i.e. mean). A line segment underlining the confidence interval appears on the histogram as well. The upper and lower bounds are printed onto the histogram as well as the statistic.
 }
 \examples{
 set.seed(60)
