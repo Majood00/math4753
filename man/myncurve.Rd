@@ -20,7 +20,7 @@ a curve with the area shaded and plotting the value of the area
 Creates a curve of a normal distribution function and plots and shaded the area
 }
 \details{
-This is the tjird function in this package for the MATH4753 class. It takes the values of the vectors and plugs them into the equation. It creates a curve of a normal distribution, and shades the area created by the specific vectors and adds the value of the area to the curve.
+This is one of the functions in this package for the MATH4753 class. It takes the values of the vectors and plugs them into the equation. It creates a curve of a normal distribution, and shades the area created by the specific vectors and adds the value of the area to the curve.
 }
 \examples{
 x=5, mu=3, sigma=6;mycurve(x,mu,sigma)

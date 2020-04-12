@@ -27,5 +27,5 @@ are printed onto the histogram as well as the statistic.
 The function uses another function to create confidence intervals in which the data is likely to fall, adjustable to a given percentage.
 }
 \examples{
-myboot2()
+set.seed(60);iter=10000;sam=round(rnorm(30,mean=20,sd=3),3);fun="mean";alpha=0.05;myboot2(iter=10000,x=sam,fun="mean",alpha=0.05,xlab="mean(x)",col=rainbow(35))
 }
