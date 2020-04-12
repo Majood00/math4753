@@ -6,8 +6,8 @@
 #'
 #' @param iter number of samples that are used to generate statistics
 #' @param x vector of the sample we choose to resample from
-#' @param fun function which takes the value of a statistical function, such as mean, median, IQR, etc.
-#' @param alpha determinant of the confidence interval in percentage. Example: .05 = 95% confidence
+#' @param fun function which takes the value of a statistical function, such as mean, median, IQR, etc
+#' @param alpha determinant of the confidence interval in percentage
 #' @param cx size of the text
 #'
 #' @return a graph with a confidence interval and a line showing the value of fun

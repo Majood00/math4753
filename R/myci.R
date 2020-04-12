@@ -14,5 +14,5 @@
 #' x = rnorm(30,mean=10,sd=12)
 #' myci(x)
 myci = function(x){
-  t.test(x,conf.level = 0.95)$conf.int
+  t.test(x,mu=0,conf.level = 0.95)$conf.int
 }
