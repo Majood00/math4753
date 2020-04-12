@@ -2,11 +2,11 @@
 #'
 #' The function uses another function to create confidence intervals in which the data is likely to fall, adjustable to a given percentage.
 #'
-#' @param iter The number of samples that are used to generate statistics.
-#' @param x The vector of the sample we choose to resample from. Example: set.seed(39); sam=rnorm(25,mean=25,sd=10) was the line we used above myboot2.
-#' @param fun Function which takes the value of a statistical function, such as mean, median, IQR, etc.
-#' @param alpha The determinant of the confidence interval in percentage. Example: .05 = 95% confidence.
-#' @param cx Size of the text.
+#' @param iter number of samples that are used to generate statistics
+#' @param x vector of the sample we choose to resample from
+#' @param fun function which takes the value of a statistical function, such as mean, median, IQR, etc.
+#' @param alpha determinant of the confidence interval in percentage. Example: .05 = 95% confidence
+#' @param cx size of the text
 #'
 #' @return The function takes a sample of size "n" from sample "n" with replacement, creates a confidence interval from alpha/2 and (1-alpha)/2.
 #' The function then creates a histogram with a verticl line segment where the statistic in question lies (i.e. mean).
@@ -15,7 +15,12 @@
 #' @export
 #'
 #' @examples
-#' set.seed(60);iter=10000;sam=round(rnorm(30,mean=20,sd=3),3);fun="mean";alpha=0.05;myboot2(iter=10000,x=sam,fun="mean",alpha=0.05,xlab="mean(x)",col=rainbow(35))
+#' set.seed(60)
+#' iter=10000
+#' sam=round(rnorm(30,mean=20,sd=3),3)
+#' fun="mean"
+#' alpha=0.05
+#' myboot2(iter=10000,x=sam,fun="mean",alpha=0.05,xlab="mean(x)",col=rainbow(35))
 myboot2=function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){
   n=length(x)   #sample size
   y=sample(x,n*iter,replace=TRUE)
