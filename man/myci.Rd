@@ -2,7 +2,7 @@
 % Please edit documentation in R/mycifunction.R
 \name{myci}
 \alias{myci}
-\title{95% Confidence Interval Function for the Mean of a Sample}
+\title{95 per cent Confidence Interval Function for the Mean of a Sample}
 \usage{
 myci(x)
 }
@@ -10,13 +10,13 @@ myci(x)
 \item{x}{vector of the sample we choose to find the confidence interval for}
 }
 \value{
-vector with the 95% confidence interval for the sample input
+vector with the 95 per cent confidence interval for the sample input
 }
 \description{
-Finds the 95% confidence interval for a sample with mean mu
+Finds the 95 per cent confidence interval for a sample with mean mu
 }
 \details{
-This is the 4th function in this package. This function produces a vector of an interval. This interval shows the confidence interval for the 95% confidence level of the mean of a sample which is being processed or which goes through this function.
+This is the 4th function in this package. This function produces a vector of an interval. This interval shows the confidence interval for the 95 per cent confidence level of the mean of a sample which is being processed or which goes through this function.
 }
 \examples{
 set.seed(50)
