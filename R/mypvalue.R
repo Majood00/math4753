@@ -15,7 +15,7 @@
 #' @examples
 #'set.seed(55)
 #'x1=rnorm(30,mean=25,sd=5)
-#'bootpval(x=x1,mu0=24,test="two")
+#'mypvalue(t0 = tcalc, n = 30, alpha = 0.05)
 mypvalue=function(t0,xmax=4,n=20, alpha=0.05){
   va=round(pt(-t0,df=n-1),4)
   pv=2*va
