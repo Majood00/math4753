@@ -2,14 +2,14 @@
 #'
 #' Finds the two rejection regions and the acceptance region along with the p-value
 #'
-#' This function calculates alpha/2, then plots the t distance. This function then sets up points on the polygon to the right and left
+#' This function calculates alpha/2, then plots the t distance. This function then sets up points on the polygon to the right and left, then shades in the polygon defined by the line segments. It makes quantiles then plots the cut off t value and adds some annotation to the graph.
 #'
 #' @param t0 a vector of t-calc
 #' @param xmax vector of the maximum value of x
 #' @param n the sample size
 #' @param alpha 1 - confidence level
 #'
-#' @return a vector with the value of p-value along with a curve that shows the two rejection regions and the acceptance region, then shades in the polygon defined by the line segments. It makes quantiles then plots the cut off t value and adds some annotation to the graph.
+#' @return a vector with the value of p-value, a vector of the value of the start of the rejection regions along with a curve that shows the two rejection regions and the acceptance region
 #' @export
 #'
 #' @examples
